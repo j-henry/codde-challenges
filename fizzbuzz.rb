@@ -1,12 +1,12 @@
 def fizzbuzz(a, z)
   range = (a..z).to_a
-  range.collect do |n|
+  range.map do |n|
     if n % 3 == 0 && n % 5 == 0
-      n = 'FizzBuzz'
+      n = "FizzBuzz"
     elsif n % 3 == 0
-      n = 'Fizz'
+      n = "Fizz"
     elsif n % 5 == 0
-      n = 'Buzz'
+      n = "Buzz"
     else
       n = n
     end
