@@ -1,16 +1,16 @@
 def fizzbuzz(a, z)
   range = (a..z).to_a
-  range.collect do |n|
+  range.map do |n|
     if n % 3 == 0 && n % 5 == 0
-      n = 'FizzBuzz'
+      "FizzBuzz"
     elsif n % 3 == 0
-      n = 'Fizz'
+      "Fizz"
     elsif n % 5 == 0
-      n = 'Buzz'
+      "Buzz"
     else
-      n = n
+      n
     end
   end
 end
 
-puts fizzbuzz(1, 100)
+print fizzbuzz(1, 100).join(", ")
